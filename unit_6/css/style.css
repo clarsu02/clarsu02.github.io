@@ -22,7 +22,8 @@ p {
 	padding: 1em;
 }
 img {
-	size: 100%;
+	width: 100%;
+	display: block;
 }
 hr {
 	border:none;
@@ -102,9 +103,39 @@ a {
 	padding:2em;
 	
 }
-#blog-1{
-	float:right;
+.blog{
+	width: 100%; 
+	max-width: 1800px;	
+	margin: 20px auto;
+	background: blue;
 }
-#blog-2{
+.blog-left{
+	width: 50%;
 	float:left;
+}
+.blog-right{
+	width: 50%;
+	float: right;
+}
+#meet-suz{
+	display: block;
+	width:500px
+	margin 20px;
+	background: green;
+	float:left;
+}
+#meet-jax{
+	display: block;
+	width:500px
+	margin 20px;
+	background: green;
+	float:left;
+}
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content:"";
+	clear: both;
+	height:0;
 }
