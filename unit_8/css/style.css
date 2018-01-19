@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/*(ask mentor about)*/ @import url("https://use.typekit.net/gvc6zix.css");
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+header {
+	background-image:url("../images/homepage-image.jpg"); /* Ask Mentor: why won't this show up????*/
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-size: cover
+	webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+header img {
+	width:400px;
+	position: top;
+	padding-bottom: 10px;
+}
+
+nav {
+	background-color:#075326;
+	text-align:center;
+	margin:0,10;
+	padding: 40px;
+
+}
+nav a {
+	color:#F7F7F7;
+	font-style: bold;
+/*	margin-right: 10px;
+	margin-left: 10px;*/
+	font-size: 30px;
+	position: center;
+	display: block;
+	width:16%;
+	float: left;
+	padding:0;
+	/*margin-bottom: 20px;*/
+	/*padding-bottom: 40px; /*//**Ask Mentor: ISSUE - why won't my nav a's center,and why does it push my header h2???**//
+}
+nav a:hover {
+	/*background-color:#B8983B;*/
+	text-decoration: underline;
+}
+body {
+	color:#222222;
+	padding: 20px;
+	margin:20px;
+	background-color:#F7F7F7;
+	/*background:blue; Whats the difference betweem background and background color.. how would I add a color to the margins????*/
+	font-size: 20px; /*1em=20px.. .but ask mentor about this because I'm not sure if this value is the "base" for everything else on the page*/
+	font-family: "Raleway", sans-serif;
+}
+p {
+	line-height: 1.5em; /*ask mentor: for these ems, what are they based off of?*/
+	font-size: 20px;
+	font-family: "Raleway", sans-serif; 
+	color:#222222;
+	padding: 1em;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+h2 {
+	font-family:"daniel", serif;
+	font-size: 2em;
+	padding: .5em;
+}
+h3 {
+	font-family:"Playfair Display", serif;
+	padding: .5em;
+}
+a {
+	text-decoration: none;
+	border-bottom: 1px solid:#000; /*color is black*/
+	color:#075326;
+	padding-bottom: 2px;
+
+
+}
+#wrapper{
+	width:95%;
+	margin: 0 auto;
+	/*the declaration above is like saying "margin-left and margin-right:auto; essentially just centering the object, in this instance, the wrapper is centered on the page"*/
+	display: block;
+	background-color:red;/*#FF69B4*/; /*this is pink - just using to see the background.. also, this doesn't work. there is no change
+*/
+}
+#slogan{
+	font-size: 2.5em;
+	padding: 0 1em ;
+	
+}
+#hero-paragraph{
+	font-size:1em;
+	padding:2em;
+	
+}
+main{
+	width: 100%; 
+	max-width: 1800px;	
+	margin: 20px auto;
+	background: blue;
+}
+main img{
+	width:50%;
+	padding:10px 10px;
+}
+.blog-left{
+	width: 50%;
+	float:left;
+}
+.blog-right{
+	width: 45%;
+	float: left;
+}
+
+.work-service-download{
+	width:23%;
+	padding:1%;
+	margin:1%;
+	float:left;
+}
+
+#about-us{
+	width: 100%;
+	clear:both;
+
+}
+.bio{
+	display: block;
+	width:50%
+	/*margin 20px;*/
+	background: green;
+	float:left;
+}
+.#about-us img{
+	width:50%;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content:"";
+	clear: both;
+	height:0;
+}
+footer{
+	background-color:#075326;
+}
