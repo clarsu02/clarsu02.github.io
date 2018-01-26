@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/*(ask mentor about)*/ @import url("https://use.typekit.net/gvc6zix.css");
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px; 
+	font-family: "Raleway", sans-serif;
+}
+header{
+	width:100%;
+}
+
+header img{
+	width:20%;
+	padding: .5em;
+}
+nav {
+	background-color:#075326;
+	text-align:center;
+	margin:0,10;
+	padding: .3em;
+}
+nav a {
+	color:#F7F7F7;
+	font-style: bold;
+	font-size: 1em;
+	position: center;
+	display: block;
+	width:16%;
+	float: left;
+	padding:0;
+}
+nav a:hover {
+	text-decoration: underline;
+	color:#e2e8f1;
+}
+/*nav a:hover hr {
+	border-color:#e9ce7f
+	ask mentor
+}*/
+
+#intro div {
+	width:100%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#intro{
+	background-image:url("../images/homepage-image.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	height:900px;
+	text-align:center;
+}
+#intro img{
+	width:100%;
+	position: top;
+	padding-bottom: 10px;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 1em;
+	font-family: "Raleway", sans-serif; 
+	color:#222222;
+	padding: 1em;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+h2 {
+	font-family:"daniel", serif;
+	font-size: 2em;
+	padding: .5em;
+	color:#0f394e;
+}
+h3 {
+	font-family:"Playfair Display", serif;
+	padding: .5em;
+}
+a {
+	text-decoration: none;
+	border-bottom: 1px solid:#000; /*color is black*/
+	color:#075326;
+	padding-bottom: 2px;
+}
+
+#slogan{
+	font-size: 3.5em;
+	padding-top:275px;
+	
+}
+#hero-paragraph{
+	font-size:1.5em;
+	padding:2em;
+	margin:0 250px;	
+}
+
+#featured{
+	width: 90%;
+	margin:0 auto;
+/*	background: #e2e8f1;*/
+}
+.blog {
+	float:left;
+	width: 50%;
+	padding:0 2em;
+}
+#second-block{
+	width:100%;
+}
+
+.work-service-download{
+	width:33.33%;
+	padding:2em;
+	margin:0 auto;
+	float:left;
+}
+
+#about-us{
+	width: 100%;
+	clear:both;
+
+}
+.bio{
+	display: block;
+	width:50%;
+	margin:0 auto;
+	padding: 0 2em;
+	float:left;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content:"";
+	clear: both;
+	height:0;
+}
+footer{
+	background-color:#075326;
+	height: 400px;
+}
+#bottom-nav a{
+	color:#F7F7F7;
+	font-style: bold;
+	font-size: 1em;
+}
+
+
+
+a#cta {
+    background: #075326;
+    color: #fff;
+    display: block;
+    width: max-content;
+    clear: both;
+    margin: auto;
+}
+
+

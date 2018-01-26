@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*color:#222222; dark gray color*/
+	padding: 20px;
+	margin:20px;
+	background-color:#eeeeee; /*ightest gray
+	background: #3C3C3C;
+	font-size: 20px; /*1em=20px.. .but ask mentor about this because I'm not sure if this value is the "base" for everything else on the page*/
+	font-family: "Raleway", sans-serif;
+}
+p {
+	line-height: 1.5em;
+	font-size: 20px;
+	font-family: "Raleway", sans-serif; 
+	padding: 1em;
+}
+
+header {
+	background-image:url("../images/our-work.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-size: cover
+}
+nav {
+	background-color:#075326; /*dark green*/
+	text-align:center;
+	padding: 40px;
+
+}
+nav a {
+	color:#FAEBD7; /*off-white, just to see what it looks like*/
+	font-style: bold;
+/*	margin-right: 10px;
+	margin-left: 10px;*/
+	font-size: 30px;
+	/*position: top*/;
+	display: block;
+	width:16%;
+	float: left;
+	padding: 10px 0;
+	/*margin-bottom: 20px;*/
+	/*padding-bottom: 40px; /*//**ISSUE - why won't my nav a's center,and why does it push my header h2???**//
+}
+nav a:hover {
+	background-color:#dd0000; /*fpo*/
+	text-decoration: underline;
+}
+h2 {
+	font-family:"Playfair Display", serif;
+	font-size: 2em;
+	padding: .5em;
+}
+h3 {
+	font-family:"Playfair Display", serif;
+	padding: .5em;
+}
+a {
+	text-decoration: none;
+	border-bottom: 1px solid:#000; /*color is black*/
+	color:#000;
+	padding-bottom: 2px;
+
+
+}
+#wrapper{
+	width:100%;
+	margin: 0 auto;
+	/*the declaration above is like saying "margin-left and margin-right:auto;"*/
+	display: block;
+	background-color:#ffffff;/*#FF69B4*/; /*this is pink - just using to see the background.. also, this doesn't work. there is no change
+*/
+}
+#slogan{
+	font-size: 2.5em;
+	padding: 0 1em ;
+	
+}
+#hero-paragraph{
+	font-size:1em;
+	padding:2em;
+	
+}
+main{
+	width: 100%; 
+	max-width: 1800px;	
+	margin: 20px auto;
+	background: blue;
+}
+.blog-left{
+	width: 50%;
+	float:left;
+}
+.blog-right{
+	width: 50%;
+	float: right;
+}
+#meet-suz{
+	display: block;
+	width:500px
+	margin 20px;
+	background: green;
+	float:left;
+}
+#meet-jax{
+	display: block;
+	width:500px
+	margin 20px;
+	background: green;
+	float:left;
+}
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content:"";
+	clear: both;
+	height:0;
+}

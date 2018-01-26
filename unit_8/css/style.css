@@ -6,28 +6,38 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-header {
-	background-image:url("../images/homepage-image.jpg"); /* Ask Mentor: why won't this show up????*/
+header{
+	width:100%;
+}
+
+header img{
+	width:25%;
+	padding: .5em;
+}
+
+#intro div {
+	width:100%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#intro{
+	background-image:url("../images/homepage-image.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat:no-repeat;
 	background-size: cover
-	webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
-
-header img {
-	width:400px;
+#intro img{
+	width:100%;
 	position: top;
 	padding-bottom: 10px;
 }
-
 nav {
 	background-color:#075326;
 	text-align:center;
 	margin:0,10;
-	padding: 40px;
+	padding: 10px;
 
 }
 nav a {
@@ -35,7 +45,7 @@ nav a {
 	font-style: bold;
 /*	margin-right: 10px;
 	margin-left: 10px;*/
-	font-size: 30px;
+	font-size: .75em;
 	position: center;
 	display: block;
 	width:16%;
@@ -49,16 +59,15 @@ nav a:hover {
 	text-decoration: underline;
 }
 body {
-	color:#222222;
-	padding: 20px;
-	margin:20px;
-	background-color:#F7F7F7;
-	/*background:blue; Whats the difference betweem background and background color.. how would I add a color to the margins????*/
+	/*color:#222222;*/
+	/*margin:20px;*/
+	/*background-color:#F7F7F7;*/
 	font-size: 20px; /*1em=20px.. .but ask mentor about this because I'm not sure if this value is the "base" for everything else on the page*/
 	font-family: "Raleway", sans-serif;
 }
+
 p {
-	line-height: 1.5em; /*ask mentor: for these ems, what are they based off of?*/
+	line-height: 1.5em;
 	font-size: 20px;
 	font-family: "Raleway", sans-serif; 
 	color:#222222;
@@ -83,17 +92,14 @@ a {
 	border-bottom: 1px solid:#000; /*color is black*/
 	color:#075326;
 	padding-bottom: 2px;
-
-
 }
-#wrapper{
+/*#wrapper{
 	width:95%;
 	margin: 0 auto;
-	/*the declaration above is like saying "margin-left and margin-right:auto; essentially just centering the object, in this instance, the wrapper is centered on the page"*/
+	the declaration above is like saying "margin-left and margin-right:auto; essentially just centering the object, in this instance, the wrapper is centered on the page"
 	display: block;
 	background-color:red;/*#FF69B4*/; /*this is pink - just using to see the background.. also, this doesn't work. there is no change
 */
-}
 #slogan{
 	font-size: 2.5em;
 	padding: 0 1em ;
@@ -104,7 +110,7 @@ a {
 	padding:2em;
 	
 }
-main{
+/*main{
 	width: 100%; 
 	max-width: 1800px;	
 	margin: 20px auto;
@@ -113,14 +119,15 @@ main{
 main img{
 	width:50%;
 	padding:10px 10px;
+}*/
+
+#featured{
+	width: 90%;
 }
-.blog-left{
-	width: 50%;
+.blog {
 	float:left;
-}
-.blog-right{
-	width: 45%;
-	float: left;
+	width: 50%;
+	padding:0 2em;
 }
 
 .work-service-download{
@@ -137,7 +144,7 @@ main img{
 }
 .bio{
 	display: block;
-	width:50%
+	width:50%;
 	/*margin 20px;*/
 	background: green;
 	float:left;
@@ -157,3 +164,29 @@ main img{
 footer{
 	background-color:#075326;
 }
+section#featured > div {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*div#second-block {
+    max-width: 1400px;
+    margin: auto;
+}
+
+section#featured {
+    background: purple;
+    color: #fff;
+    padding: 4em 0;*/
+}
+
+a.cta {
+    background: #075326;
+    color: #fff;
+    display: block;
+    width: max-content;
+    clear: both;
+    margin: auto;
+}
+
+
