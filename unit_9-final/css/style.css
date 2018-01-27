@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-/*(ask mentor about)*/ @import url("https://use.typekit.net/gvc6zix.css");
+@import url("https://use.typekit.net/gvc6zix.css");
 *{
 	padding: 0;
 	margin: 0;
@@ -17,15 +16,21 @@ header{
 header img{
 	width:20%;
 	padding: .5em;
+	min-width:300px;
 }
 nav {
-	background-color:#075326;
+	background-color:#075326; 
 	text-align:center;
 	margin:0,10;
 	padding: .3em;
 }
+
+nav a:hover {
+	text-decoration: underline;
+	color:#e2e8f1;
+}
 nav a {
-	color:#F7F7F7;
+	color:#e2e8f1;
 	font-style: bold;
 	font-size: 1em;
 	position: center;
@@ -36,7 +41,7 @@ nav a {
 }
 nav a:hover {
 	text-decoration: underline;
-	color:#e2e8f1;
+	text-decoration-color:#e9ce7f; 
 }
 /*nav a:hover hr {
 	border-color:#e9ce7f
@@ -55,8 +60,23 @@ nav a:hover {
 	background-position: center center;
 	background-repeat:no-repeat;
 	background-size: cover;
-	height:900px;
+	height:1000px;
 	text-align:center;
+}
+
+#intro image:after{
+content:" ";
+position:absolute;
+left:0;
+top:0;
+right:0;
+bottom:0;
+background:rgba(255,255,255,0.2);
+z-index:1;
+pointer-events:none;
+}
+.rev_slider .tp-caption{z-index:2
+
 }
 #intro img{
 	width:100%;
@@ -69,39 +89,49 @@ p {
 	font-size: 1em;
 	font-family: "Raleway", sans-serif; 
 	color:#222222;
-	padding: 1em;
+/*	padding: 1em;*/
+	padding-bottom:2em;
 }
 
 img {
 	width: 100%;
 	display: block;
 }
-h2 {
-	font-family:"daniel", serif;
+h1{font-family:"daniel", serif;
 	font-size: 2em;
 	padding: .5em;
 	color:#0f394e;
 }
+
+h2 {
+	font-family:"daniel", serif;
+	font-size: 2em;
+	color:#0f394e;
+	padding:1em 0 1em 0;
+}
 h3 {
-	font-family:"Playfair Display", serif;
-	padding: .5em;
+	font-family:"Raleway", san-serif;
+	/*padding: .5em;*/
+	padding:1em 0 1em 0;
 }
 a {
 	text-decoration: none;
-	border-bottom: 1px solid:#000; /*color is black*/
+	border-bottom: 1px solid:#e9ce7f; /*ask for mentor help here*/
 	color:#075326;
 	padding-bottom: 2px;
 }
 
 #slogan{
-	font-size: 3.5em;
-	padding-top:275px;
+	 font-size: 3.25em;
+    padding-top: 230px;
+    padding-left: 6em;
+    padding-right: 6em;
 	
 }
 #hero-paragraph{
 	font-size:1.5em;
 	padding:2em;
-	margin:0 250px;	
+	margin:0 318px;	
 }
 
 #featured{
@@ -126,8 +156,9 @@ a {
 }
 
 #about-us{
-	width: 100%;
-	clear:both;
+    width: 75%;
+    clear: both;
+    margin: 0 auto;
 
 }
 .bio{
@@ -148,22 +179,258 @@ a {
 footer{
 	background-color:#075326;
 	height: 400px;
+	width:100%;
+	display: block;
 }
+
 #bottom-nav a{
 	color:#F7F7F7;
 	font-style: bold;
 	font-size: 1em;
+	/*display: block;
+}*/
+}
+ul{
+	margin:0 auto;
+	list-style: none;
+
+}
+li{
+	padding:1em;
+	padding: .5em;
+    text-align: left;
+    margin: .5em;
+}
+li a{
+
+	color:#F7F7F7;
+	font-style: bold;
+	font-size: 1em;
+	position: center;
+	display: block;
+	width:16%;
+	float: left;
+	padding:0;
 }
 
+li a:hover {
+	text-decoration: underline;
+	color:#e2e8f1;
+}
+#nav-boxes{
+	float:left;
+	width:33.33%;
+	display: block;
 
+}
+h2,p#light{
+	color:#e9ce7f;
+}
 
+/*Mentor reference quesiton #5:ask mentor about above - I know its possible to style multiple elements this way, but I'm not sure if it can be done with multiple elements with the same class. Either way, I couldn't get this to work*/
 a#cta {
     background: #075326;
-    color: #fff;
+    color: #e2e8f1;
     display: block;
-    width: max-content;
+    width: 311px;
     clear: both;
-    margin: auto;
+    margin: 3em auto;
+    padding: 27px;
+    text-align: center;
+    border: none;
+    border-radius:3em;
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,.2);
+    position: center;
+   }
+
+ a#cta:hover{
+
+	border-bottom:1px solid #e9ce7f;
+ 	padding-bottom:1px;
+ 	
+
+
+}
+
+label {
+	color:#e2e8f1;
+	font-style: bold;
+	font-size: 1em;
+	position: center;
+	display: block;
+	width:16%;
+	float: right;
+	padding:0;
+	display:none;
+	background: #075326;
+}
+
+label:hover {
+	text-decoration: underline;
+	color:#e2e8f1;
+}
+
+@media screen and (max-width:1800px){
+	#hero-paragraph{
+	font-size:1.25em;
+	padding:2em;
+	margin:0 16px;	
+	}
+	#slogan{
+	font-size: 2.9em;
+	padding-top:185px;
+	padding-top: 254px;
+    padding-right: 3em;
+    padding-left: 3em;
+	}
+	#intro{
+	height:800px;
+	}
+
 }
 
 
+@media screen and (max-width:1600px){
+
+	#hero-paragraph{
+	font-size:1.25em;
+	padding:2em;
+	margin:0 16px;	
+	}
+
+}
+
+@media screen and (max-width:1440px){
+
+	#hero-paragraph{
+	font-size:1.25em;
+	padding:2em;
+	margin:0 16px;	
+	}
+	#slogan{
+	font-size: 2.9em;
+    padding-top: 213px;
+    line-height: 1.35em;
+    padding-right: 1em;
+    padding-left: 1em
+	}
+
+}
+
+@media screen and (max-width:1200px){
+
+	#hero-paragraph{
+	font-size: 1.25em;
+    padding-top: 17px;
+    line-height: 1.350em;	
+	}
+	#slogan{
+	font-size: 2.9em;
+    padding-top: 213px;
+    line-height: 1.35em;
+    padding-right: 1em;
+    padding-left: 1em
+	}
+
+@media screen and (max-width:1020px){
+	.work-service-download{
+	width:100%;
+	}
+	.bio{
+	width:100%;
+	}
+}
+
+	
+
+}
+@media screen and (max-width:950px){
+		.blog {
+	width: 100%;
+    padding: 1em 1em;
+	}
+
+
+}
+
+@media screen and (max-width:850px){
+	nav {
+	visibility: hidden;
+	}
+	nav a {
+	visibility: hidden;
+	}
+	header{
+	width:100%;
+	height: 3.5em;
+	}
+	#intro{
+	background-image:url("../images/homepage-image.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	height:730px;
+	text-align:center;
+	}
+	#slogan{
+	font-size: 2.5em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 264px;
+    line-height: 1.25em;
+	}
+	#hero-paragraph{
+	font-size:1em;
+	padding:1em;
+	margin:0 16px;	
+	}
+	label{
+	display:block;
+	}
+	#toggle:checked + nav {
+	display:block
+
+	}
+
+
+}
+
+@media screen and (max-width:750px){
+	#slogan {
+    font-size: 2em;
+    line-height: 1.25em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 253px;
+    line-height: 1.25em;
+ 
+	}
+
+	#hero-paragraph{
+	font-size:.9em;
+	padding:1em;
+	margin:0 16px;	
+	}
+	#intro{
+	height:637px;
+
+
+}
+@media screen and (max-width:540px){
+
+	#slogan {
+    font-size: 2em;
+    line-height: 1.25em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 253px;
+	}
+
+	#hero-paragraph{
+	font-size: .79em;
+	padding:1em;
+	margin:0 16px;	
+	}
+
+}
