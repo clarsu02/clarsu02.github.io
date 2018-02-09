@@ -26,27 +26,28 @@ nav {
 }
 
 nav a:hover {
-	text-decoration: underline;
-	color:#e2e8f1;
+	border-bottom:1px solid #e9ce7f;
+	/*color:#e2e8f1;*/
 }
 nav a {
 	color:#e2e8f1;
-	font-style: bold;
+	/*font-style: bold;*/ /*ask mentor*/
 	font-size: 1em;
-	position: center;
+	/*position: center;*/
 	display: block;
 	width:16%;
 	float: left;
 	padding:0;
 }
+
+.header-link{
+	padding:2em auto;
+
+}
 nav a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	text-decoration-color:#e9ce7f; 
 }
-/*nav a:hover hr {
-	border-color:#e9ce7f
-	ask mentor
-}*/
 
 #intro div {
 	width:100%;
@@ -55,7 +56,7 @@ nav a:hover {
 }
 
 #intro{
-	background-image:url("../images/homepage-image.jpg");
+	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)), url("../images/homepage-image.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat:no-repeat;
@@ -64,7 +65,7 @@ nav a:hover {
 	text-align:center;
 }
 
-#intro image:after{
+/*#intro:after{
 content:" ";
 position:absolute;
 left:0;
@@ -73,8 +74,8 @@ right:0;
 bottom:0;
 background:rgba(255,255,255,0.2);
 z-index:1;
-pointer-events:none;
-}
+pointer-events:none;*/
+
 
 }
 #intro img{
@@ -96,6 +97,15 @@ img {
 	width: 100%;
 	display: block;
 }
+img:hover{
+	opacity:10;
+	transition:opacity .2s ease-in-out
+	-moz-transition: opacity .2s ease-in-out
+	-webkit-transition:opacity .2s ease-in-out
+	-o-transition:opacity .2s ease-in-out;
+}
+
+
 h1{font-family:"daniel", serif;
 	font-size: 2em;
 	padding: .5em;
@@ -177,9 +187,10 @@ a {
 }
 footer{
 	background-color:#075326;
-	height: 400px;
+	/*height: 400px;*/
 	width:100%;
 	display: block;
+	float:left;
 }
 
 #bottom-nav a{
@@ -217,16 +228,26 @@ li a:hover {
 	color:#e2e8f1;
 }
 #nav-boxes{
-	float:left;
 	width:33.33%;
-	display: block;
+	padding:2em;
+	margin:0 auto;
+	float:left;
+
 
 }
-h2#light{
+h2.light{
 	color:#e9ce7f;
 }
+/*
+p.light{
+	color:#e2e8f1;
+}*/
 
-/*Mentor reference quesiton #5:ask mentor about above - I know its possible to style multiple elements this way, but I'm not sure if it can be done with multiple elements with the same class. Either way, I couldn't get this to work*/
+footer p{
+	color:#e2e8f1;
+	
+}
+
 a#cta {
     background: #075326;
     color: #e2e8f1;
@@ -246,9 +267,20 @@ a#cta {
 
 	border-bottom:1px solid #e9ce7f;
  	padding-bottom:1px;
- 	
 
+}
 
+hr#yellow{
+	border-bottom:3px solid #e9ce7f;
+	width: 100px;
+}
+hr#blue{
+	border-bottom:3px solid #0f394e;
+	width: 25%;
+}
+hr#section{
+	border-bottom:3px solid #075326;
+	width:90%;
 }
 
 label {
@@ -299,6 +331,11 @@ label:hover {
 
 }
 
+
+/*.incremental-fade:hover{
+	transition:all .15s ease-in-out;
+	opacity:1;*/
+}
 @media screen and (max-width:1440px){
 
 	#hero-paragraph{

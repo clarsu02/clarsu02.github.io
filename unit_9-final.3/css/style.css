@@ -26,27 +26,28 @@ nav {
 }
 
 nav a:hover {
-	text-decoration: underline;
-	color:#e2e8f1;
+	border-bottom:1px solid #e9ce7f;
+	/*color:#e2e8f1;*/
+	text-decoration: none;
 }
 nav a {
 	color:#e2e8f1;
-	font-style: bold;
+	/*font-style: bold;*/ /*ask mentor*/
 	font-size: 1em;
-	position: center;
 	display: block;
 	width:16%;
 	float: left;
 	padding:0;
 }
-nav a:hover {
-	text-decoration: underline;
-	text-decoration-color:#e9ce7f; 
+
+.header-link{
+	padding:2em auto;
+
 }
-/*nav a:hover hr {
-	border-color:#e9ce7f
-	ask mentor
-}*/
+/*nav a:hover {
+	text-decoration: underline;
+	text-decoration-color:#e9ce7f; */
+}
 
 #intro div {
 	width:100%;
@@ -55,7 +56,7 @@ nav a:hover {
 }
 
 #intro{
-	background-image:url("../images/homepage-image.jpg");
+	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)), url("../images/homepage-image.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat:no-repeat;
@@ -64,7 +65,7 @@ nav a:hover {
 	text-align:center;
 }
 
-#intro image:after{
+/*#intro:after{
 content:" ";
 position:absolute;
 left:0;
@@ -73,8 +74,8 @@ right:0;
 bottom:0;
 background:rgba(255,255,255,0.2);
 z-index:1;
-pointer-events:none;
-}
+pointer-events:none;*/
+
 
 }
 #intro img{
@@ -88,7 +89,6 @@ p {
 	font-size: 1em;
 	font-family: "Raleway", sans-serif; 
 	color:#222222;
-/*	padding: 1em;*/
 	padding-bottom:2em;
 }
 
@@ -96,6 +96,15 @@ img {
 	width: 100%;
 	display: block;
 }
+img:hover{
+	opacity:700;
+	transition:opacity .2s ease-in-out
+	-moz-transition: opacity .2s ease-in-out
+	-webkit-transition:opacity .2s ease-in-out
+	-o-transition:opacity .2s ease-in-out;
+}
+
+
 h1{font-family:"daniel", serif;
 	font-size: 2em;
 	padding: .5em;
@@ -177,9 +186,10 @@ a {
 }
 footer{
 	background-color:#075326;
-	height: 400px;
+	/*height: 400px;*/
 	width:100%;
 	display: block;
+	float:left;
 }
 
 #bottom-nav a{
@@ -217,16 +227,26 @@ li a:hover {
 	color:#e2e8f1;
 }
 #nav-boxes{
-	float:left;
 	width:33.33%;
-	display: block;
+	padding:2em;
+	margin:0 auto;
+	float:left;
+
 
 }
-h2#light{
+h2.light{
 	color:#e9ce7f;
 }
+/*
+p.light{
+	color:#e2e8f1;
+}*/
 
-/*Mentor reference quesiton #5:ask mentor about above - I know its possible to style multiple elements this way, but I'm not sure if it can be done with multiple elements with the same class. Either way, I couldn't get this to work*/
+footer p{
+	color:#e2e8f1;
+	
+}
+
 a#cta {
     background: #075326;
     color: #e2e8f1;
@@ -246,12 +266,88 @@ a#cta {
 
 	border-bottom:1px solid #e9ce7f;
  	padding-bottom:1px;
- 	
-
 
 }
 
-label {
+hr#yellow{
+	border-bottom:3px solid #e9ce7f;
+	width: 100px;
+}
+hr#blue{
+	border-bottom:3px solid #0f394e;
+	width: 25%;
+}
+hr#section{
+	border-bottom:3px solid #075326;
+	width:90%;
+}
+
+.hamburger{
+	background: none;
+	position:absolute;
+	top:0
+	right:0
+	line-height:45px;
+	padding:5px, 15px 0px 15px;
+	color:#0f394e;
+	border:0;
+	font-size: 1.4em;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+	z-index:1000000000000000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.mobile-menu{
+	z-index: 10000000000;
+	font-size:1em;
+	position: absolute;
+	width:100%;
+	background-color:#075326; 
+	text-align:center;
+	margin:0,10;
+	padding: .3em;
+	visibility: hidden;
+}
+.mobile-menu ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	list-style-image: none;
+}
+.mobile-menu li{
+	display:block;
+	padding: 15 0
+	border-bottom #dddddd 1px solid;
+}
+.mobile-menu li:hover{
+	display: block;
+	background:#ffffff;
+	padding:15px 0 15px 0;
+	border-bottom:#dddddd 1px solid;
+}
+.mobile-menu ul li a:hover{
+	text-decoration: none;
+	color:#666;
+} 
+
+
+/*label {
 	color:#e2e8f1;
 	font-style: bold;
 	font-size: 1em;
@@ -268,7 +364,7 @@ label:hover {
 	text-decoration: underline;
 	color:#e2e8f1;
 }
-
+*/
 @media screen and (max-width:1800px){
 	#hero-paragraph{
 	font-size:1.25em;
@@ -299,6 +395,11 @@ label:hover {
 
 }
 
+
+/*.incremental-fade:hover{
+	transition:all .15s ease-in-out;
+	opacity:1;*/
+}
 @media screen and (max-width:1440px){
 
 	#hero-paragraph{
@@ -384,11 +485,11 @@ label:hover {
 	padding:1em;
 	margin:0 16px;	
 	}
-	label{
+	/*label{
 	display:block;
 	}
 	#toggle:checked + nav {
-	display:block
+	display:block*/
 
 	}
 
